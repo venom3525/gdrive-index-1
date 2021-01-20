@@ -7,7 +7,7 @@ const clientId = '58094879805-4654k2k5nqdid5bavft7fvea5u9po0t1.apps.googleuserco
 const clientSecret = 'ZNPZ-vS6N9Zjsyb_sNMZmXHL';
 const grantType = 'authorization_code';
 const redirectURI = 'urn:ietf:wg:oauth:2.0:oob';
-const jsURL = 'https://raw.githubusercontent.com/afdulfauzan/Google-Drive-Index/master/worker/worker-beta.js';
+const jsURL = 'https://raw.githubusercontent.com/afdulfauzan/gdrive-index/master/worker/worker-beta.js';
 
 async function handleRequest(request) {
     let title = getParameterByName(request.url, 'site_name') || 'Google Drive Index';
@@ -285,7 +285,7 @@ async function handleRequest(request) {
 <body class="mdui-theme-primary-blue-grey mdui-theme-accent-blue">
 <div class="mdui-container">
     <br><br>
-    <a href="https://github.com/afdulfauzan/Google-Drive-Index"><img border="0" alt="AF Cloud" src="https://cdn.jsdelivr.net/gh/afdulfauzan/svg@1.0.1/af-cloud-logo.svg" height="30px"></a><h3>Drive Index Generator - Beta</h3>
+    <a href="https://github.com/afdulfauzan/gdrive-index"><img border="0" alt="AF Cloud" src="https://cdn.jsdelivr.net/gh/afdulfauzan/svg@1.0.1/af-cloud-logo.svg" height="30px"></a><h3>Drive Index Generator - Beta</h3>
     <br>
     <div class="mdui-row">
         <div class="mdui-col-sm-2">

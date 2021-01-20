@@ -1,5 +1,5 @@
 /**
-* A Script Redesigned by Af from GOIndex at https://github.com/afdulfauzan/Google-Drive-Index
+* A Script Redesigned by Af from GOIndex at https://github.com/afdulfauzan/gdrive-index
 */
 const authConfig = {
 	"siteName": "Google Drive Index", // Website name
@@ -57,7 +57,7 @@ const authConfig = {
 const uiConfig = {
 	"theme": "google_bootstrap", // Change doesn't works
 	"dark_mode": true, // switch between light or dark themes
-	"version": "1.0", // don't touch this one. get latest code using generator at https://github.com/afdulfauzan/Google-Drive-Index
+	"version": "1.0", // don't touch this one. get latest code using generator at https://github.com/afdulfauzan/gdrive-index
 	"logo_image": false, // true if you're using image link in next option.
 	"logo_height": "", // only if logo_image is true
 	"logo_width": "100px", // only if logo_image is true
@@ -116,26 +116,26 @@ function html(current_drive_order = 0, model = {}) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
   <title>${authConfig.siteName}</title>
   <meta name="robots" content="noindex" />
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/afdulfauzan/Google-Drive-Index@${uiConfig.version}/images/favicon.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/afdulfauzan/gdrive-index@${uiConfig.version}/images/favicon.ico">
   <script>
     window.drive_names = JSON.parse('${JSON.stringify(authConfig.roots.map(it => it.name))}');
     window.MODEL = JSON.parse('${JSON.stringify(model)}');
     window.current_drive_order = ${current_drive_order};
     window.UI = JSON.parse('${JSON.stringify(uiConfig)}');
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afdulfauzan/Google-Drive-Index@${uiConfig.version}/css/mdui-style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afdulfauzan/gdrive-index@${uiConfig.version}/css/mdui-style.min.css">
   <script src="https://cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelementplayer.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelement-and-player.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afdulfauzan/Google-Drive-Index@${uiConfig.version}/css/bootstrap/${uiConfig.dark_mode ? 'dark' : 'light'}.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afdulfauzan/gdrive-index@${uiConfig.version}/css/bootstrap/${uiConfig.dark_mode ? 'dark' : 'light'}.min.css">
   <style>${uiConfig.display_size ? '' : '.csize{display:none;}'}${uiConfig.display_time ? '' : '.cmtime{display:none;}'}</style>
-  <script src="https://cdn.jsdelivr.net/gh/afdulfauzan/Google-Drive-Index@${uiConfig.version}/js/app.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/afdulfauzan/Google-Drive-Index@${uiConfig.version}/js/mdui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/afdulfauzan/gdrive-index@${uiConfig.version}/js/app.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/afdulfauzan/gdrive-index@${uiConfig.version}/js/mdui.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>
 </head>
 <body>
 </body>
-<script src="https://cdn.jsdelivr.net/gh/afdulfauzan/Google-Drive-Index@${uiConfig.version}/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/afdulfauzan/gdrive-index@${uiConfig.version}/js/bootstrap.min.js"></script>
 </html>`;
 };
 
